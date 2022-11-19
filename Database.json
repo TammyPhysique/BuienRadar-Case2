@@ -1,0 +1,12 @@
+//connection
+$mysqli = educom("localhost", "Educom", "CpJGt6]BH3CuC)sC", "databaseeducom");
+
+//obtaining the jsondata.
+$result = $mysqli->query("SELECT jsondata FROM matchinfo");
+$row = $result->fetch_array(MYSQLI_ASSOC);
+
+//The data is like file_get_contents("api_url");
+$json_response = $row['jsondata']; //json string
+
+//If you want to use data as array.
+$json = json_decode($json_response, true); //array
