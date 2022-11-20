@@ -1,3 +1,45 @@
-h1, h2 {
-  font-family: Lato;
+head, label{
+  font-family: Lato; 
+  box-shadow: -10px -8px 0px rgb(167 243 208);
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 14px 24px;
+  border: none;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  background: linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%);
+  color: #fff;
+
+}
+
+button, var {
+font-size: 14px;
+border-radius: 6px;
+line-height: 1.5;
+padding: 5px 10px;
+transition: box-shadow 100ms ease-in, border 100ms ease-in, background-color 100ms ease-in;
+border: 2px solid #dee1e2;
+color: rgb(14, 14, 16);
+background: #dee1e2;
+display: block;
+height: 36px;
+:hover {
+  border-color: #ccc;
+}
+:focus{
+  border-color: #9147ff;
+  background: #fff;
+}
+}
+
+body,  {
+padding: 5px;
+margin: 10px;
+text-align: center;
+border-color: orange;
+border-width: 4px;
 }
